@@ -58,7 +58,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
 }) => (
   <div className="flex flex-col items-center text-center">
-    <div className="h-12 w-12 mb-4 text-primary">{icon}</div>
+    <div className=" mb-4 text-primary shrink-0">{icon}</div>
     <h3 className="text-xl font-bold mb-2">{title}</h3>
     <p className="text-gray-500 dark:text-gray-400">{description}</p>
   </div>
@@ -67,7 +67,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 const FeaturesSection = () => (
   <section
     id="features"
-    className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
+    className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-purple-50"
   >
     <div className="container mx-auto px-4 md:px-6">
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
@@ -75,17 +75,17 @@ const FeaturesSection = () => (
       </h2>
       <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         <FeatureCard
-          icon={<Zap />}
+          icon={<Zap size={48} />}
           title="AI-Powered Insights"
           description="Get personalized recommendations and insights to help you achieve your goals faster."
         />
         <FeatureCard
-          icon={<Target />}
+          icon={<Target size={48} />}
           title="Smart Goal Setting"
           description="Set SMART goals with AI assistance to ensure your objectives are achievable and measurable."
         />
         <FeatureCard
-          icon={<CheckCircle />}
+          icon={<CheckCircle size={48} />}
           title="Progress Tracking"
           description="Visualize your progress and stay motivated with real-time updates and analytics."
         />
